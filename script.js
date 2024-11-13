@@ -76,6 +76,10 @@ openGitHubDev = () => {
   window.open("https://github.com/joaov-t", "_blank");
 };
 
+openGitHub = () => {
+  window.open("https://github.com/lavoyagerestaurant/homepage/", "_blank");
+};
+
 setInterval(() => {
   let carouselImgs = document.querySelectorAll(".items-carousel img");
   if (_playCarousel) {
