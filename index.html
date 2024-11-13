@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Voyage - Restaurante</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Playwrite+FR+Trad:wght@100..400&family=Quicksand:wght@300..700&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div>
+      <div class="fixed-card">
+        <img src="imgs/lavoyage_transparent_v2.png" alt="" />
+      </div>
+      <section class="trademark-card">
+        <img
+          src="imgs/lavoyage-logo-animated.gif"
+          alt=""
+          class="animated"
+          onload="stopGifTimeout();"
+          id="animated-logo"
+        />
+        <img
+          src="imgs/lavoyage-logo-2.png"
+          alt=""
+          class="hidden"
+          id="static-logo"
+        />
+        <div class="paper-overlay"></div>
+      </section>
+      <section class="france-card flag">
+        <div class="content">
+          <h2>França</h2>
+          <p>
+            Uma imersão no país da arte através da culinária! Pratos: Coq au
+            vin, salade niçoise, camembert, e outros.
+          </p>
+        </div>
+        <div class="right">
+          <div class="flag france"></div>
+        </div>
+      </section>
+      <section class="mexico-card flag">
+        <div class="content">
+          <h2>México</h2>
+          <p>
+            Viaje em uma experiência única para conhecer a rica cultura deste
+            país! Pratos: Nachos com Chili, Burritos, Enchiladas, e outros.
+          </p>
+        </div>
+        <div class="right">
+          <div class="flag mexico"></div>
+        </div>
+      </section>
+      <section class="brazil-card flag">
+        <div class="content">
+          <h2>Brasil</h2>
+          <p>
+            Aprecie a extraordinária culinária do país do futebol! Pratos: Bobó
+            de camarão, Feijoada, Moqueca de peixe, e outros.
+          </p>
+        </div>
+        <div class="right">
+          <div class="flag brazil"></div>
+        </div>
+      </section>
+      <section class="contact-card">
+        <div class="items-carousel">
+          <img src="./imgs/items/1.jpeg" alt="" />
+          <img src="./imgs/items/2.png" alt="" />
+          <img src="./imgs/items/3.png" alt="" />
+          <img src="./imgs/items/4.jpeg" alt="" />
+          <img src="./imgs/items/5.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <h2>Reservas</h2>
+          <div class="reservation-form shrink">
+            <input type="text" name="nome" value="" placeholder="Nome" />
+            <input
+              type="text"
+              name="cpf"
+              value=""
+              placeholder="CPF (XXX.XXX.XXX-XX)"
+            />
+            <input
+              type="text"
+              name="pessoas"
+              value=""
+              placeholder="No. de Pessoas"
+            />
+            <input type="date" name="data" value="" placeholder="DD/MM/YYYY" />
+            <input type="time" name="hora" value="" placeholder="HH:MM" />
+            <input
+              type="button"
+              name="enviar"
+              value="Enviar"
+              onclick="sendReservation()"
+            />
+          </div>
+          <div class="success-message hidden shrink" id="success-message">
+            <div>Reserva feita com sucesso!</div>
+
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <span class="footer">
+            <div class="github link tooltip" onclick="openGitHubDev()">
+              <span class="tooltiptext">joaov-t</span>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="info link"><i class="fa-solid fa-circle-info"></i></div>
+          </span>
+        </div>
+        <div class="paper-overlay"></div>
+      </section>
+    </div>
+  </body>
+</html>
