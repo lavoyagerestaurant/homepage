@@ -18,7 +18,11 @@ setupFixedCardHandler = () => {
 
   changeCardsTransparency = () => {
     trademarkYPos = trademarkElement.getBoundingClientRect().y;
-    if (trademarkYPos <= window.innerHeight * -1) {
+
+    if (
+      trademarkYPos <= window.innerHeight * -1 ||
+      (screen.orientation.type.includes("portrait") && trademarkYPos < 0)
+    ) {
       fixedCard.classList.add("transparent");
       document.querySelectorAll("div.content").forEach((element) => {
         element.classList.add("visible");
