@@ -330,8 +330,11 @@ input[type="button"]:active {
   section.flag::before {
     content: "";
     background-image: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vh;
     height: 100%;
+    left: -20%;
     display: inherit;
     position: absolute;
     transform: rotate(90deg);
